@@ -581,6 +581,7 @@ table.quizreviewsummary td.cell {
 
 #page-mod-quiz-edit .section-heading .sectioninstance {
     position: relative;
+    font-size: 1.2rem;
 }
 
 #page-mod-quiz-edit .section-heading .instancesection {
@@ -774,6 +775,10 @@ table.quizreviewsummary td.cell {
 
 #page-mod-quiz-edit span.editinstructions {
     right: 0;
+}
+
+#id_editinstructions {
+    margin-right: 1rem;
 }
 
 #page-mod-quiz-edit ul.slots .activityinstance span.instancename {
