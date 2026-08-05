@@ -38222,6 +38222,10 @@ p.arrow_button {
   margin-right: 12px;
 }
 
+.gradingform_guide .criterion .description .criterionmaxscore input {
+  width: 60px;
+}
+
 .grade-display .description {
   font-size: 1rem;
 }
