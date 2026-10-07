@@ -168,7 +168,7 @@ Y.extend(SECTIONTOOLBOX, TOOLBOX, {
             var editform = Y.Node.create('<form action="#" />');
             var editinstructions = Y.Node.create('<span class="' + CSS.EDITINSTRUCTIONS + '" id="id_editinstructions" />')
                 .set('innerHTML', M.util.get_string('edittitleinstructions', 'moodle'));
-            var editor = Y.Node.create('<input name="section" type="text" />').setAttrs({
+            var editor = Y.Node.create('<input name="section" type="text" class="form-control" />').setAttrs({
                 'value': oldtext,
                 'autocomplete': 'off',
                 'aria-describedby': 'id_editinstructions',
@@ -176,9 +176,9 @@ Y.extend(SECTIONTOOLBOX, TOOLBOX, {
             });
 
             // Clear the existing content and put the editor in.
+            editform.appendChild(editinstructions);
             editform.appendChild(editor);
             editform.setData('anchor', anchor);
-            instancesection.insert(editinstructions, 'before');
             anchor.replace(editform);
 
             // Focus and select the editor text.
